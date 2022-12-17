@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <h1>Oh! It's a quiz</h1>
+
+    <div id="question">
+      <p>Score : <span id="score">0</span></p>
+      <p id="q"></p>
+    </div>
+
+    <input type="text" placeholder="Write the correct answer" name="answer" id="answer">
+    <button id="btn" onclick="nextQuestion()">Send Answer</button>
+
+    <div id="modal">
+      <div id="modal-content">
+
+        <div id="modal-header">
+          <h2></h2>
+        </div>
+
+        <div id="modal-body">
+          <p id="correction"></p>
+        </div>
+
+        <div id="modal-footer">
+          <h2 onclick="resetGame()">The End</h2>
+        </div>
+
+      </div>
+    </div>
+
+    <button id="start" onclick="startGame()">Start Game</button>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
